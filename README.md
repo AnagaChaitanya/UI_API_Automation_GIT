@@ -1,2 +1,0 @@
-# UI_API_Automation_GIT
-BlazeDemo_UI_Automation
