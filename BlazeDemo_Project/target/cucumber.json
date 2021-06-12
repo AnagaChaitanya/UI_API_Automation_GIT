@@ -1,0 +1,218 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "start_timestamp": "2021-06-11T21:33:30.370Z",
+        "before": [
+          {
+            "result": {
+              "duration": 4302500,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDef.stepDefinitions.getProperty()"
+            }
+          },
+          {
+            "result": {
+              "duration": 13338114400,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDef.stepDefinitions.launchBrowser()"
+            }
+          }
+        ],
+        "line": 6,
+        "name": "Verify booking a flight and validate confirmation ID",
+        "description": "",
+        "id": "e2e-test-cases;verify-booking-a-flight-and-validate-confirmation-id",
+        "after": [
+          {
+            "result": {
+              "duration": 2990400,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDef.stepDefinitions.tearDown(io.cucumber.java.Scenario)"
+            }
+          },
+          {
+            "result": {
+              "duration": 1199049400,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDef.stepDefinitions.quitBrowser()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 59934500,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "verify travel agency home page",
+            "match": {
+              "location": "stepDef.stepDefinitions.verify_travel_agency_home_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 11349516200,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "select the departure and destination",
+            "match": {
+              "location": "stepDef.stepDefinitions.select_the_departure_and_destination(io.cucumber.datatable.DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "Departure",
+                  "Destination"
+                ]
+              },
+              {
+                "cells": [
+                  "San Diego",
+                  "London"
+                ]
+              }
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 10775665700,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "choose the flight from \"San Diego\" to \"London\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"San Diego\"",
+                  "offset": 23
+                },
+                {
+                  "val": "\"London\"",
+                  "offset": 38
+                }
+              ],
+              "location": "stepDef.stepDefinitions.choose_the_flight_from_to(java.lang.String,java.lang.String,io.cucumber.datatable.DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "Flight #",
+                  "Airline"
+                ]
+              },
+              {
+                "cells": [
+                  "12",
+                  "Virgin America"
+                ]
+              }
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 6703589300,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "verify entering passenger details for flightNum \"12\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"12\"",
+                  "offset": 48
+                }
+              ],
+              "location": "stepDef.stepDefinitions.verify_entering_passenger_details_for_flight_num(java.lang.String,io.cucumber.datatable.DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "Name",
+                  "Address",
+                  "City",
+                  "State",
+                  "Zip Code",
+                  "Card Type",
+                  "Credit Card Number",
+                  "Month",
+                  "Year",
+                  "Name on Card"
+                ]
+              },
+              {
+                "cells": [
+                  "John",
+                  "#23, Gree valley",
+                  "Amsterdam",
+                  "France",
+                  "NE12 3BJ",
+                  "American Express",
+                  "2297 7237 3746 4946",
+                  "Jan",
+                  "2022",
+                  "John Daniel"
+                ]
+              }
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 690700,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "verify the booking confirmation ID",
+            "match": {
+              "location": "stepDef.stepDefinitions.verify_the_booking_confirmation_id()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@BDtests"
+          },
+          {
+            "name": "@PR_P0"
+          },
+          {
+            "name": "@regression"
+          }
+        ]
+      }
+    ],
+    "name": "E2E test cases",
+    "description": "",
+    "id": "e2e-test-cases",
+    "keyword": "Feature",
+    "uri": "file:src/resources/BD_FlightBooking.feature",
+    "tags": [
+      {
+        "name": "@BDtests",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  }
+]
