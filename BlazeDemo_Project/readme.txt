@@ -28,3 +28,12 @@ Enhancements
 - Serenity screenplay incorporation
 - Extent Reports implementation ( would be really nice )
 
+
+
+===================================== API Test ==========================================================
+
+Run spaceDataX_RestAPI.java as java application project
+Scenarios covered :
+1. 200 GET happy path
+2. 404 - If Endpoint is wrong
+3. Status code verification
